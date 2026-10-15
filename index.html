@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Fenómeno del Niño</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3e2d0;
+            color: #4a2c20;
+        }
+
+        header {
+            background-color: #9b4f32;
+            color: #fff8f0;
+            padding: 35px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 40px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        nav {
+            background-color: #6f3828;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav button {
+            background: none;
+            border: none;
+            color: #fff8f0;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            margin: 0 18px;
+            font-weight: bold;
+            font-family: Arial, sans-serif;
+        }
+
+        nav button:hover, nav button.active {
+            color: #e7a36b;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        .seccion-contenido {
+            display: none;
+        }
+
+        .seccion-contenido.activa {
+            display: block;
+        }
+
+        .hero {
+            background-color: #fff8f0;
+            padding: 40px 30px;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(74, 44, 32, 0.2);
+        }
+
+        .hero h2 {
+            font-size: 34px;
+            margin-bottom: 20px;
+            color: #8b452f;
+        }
+
+        .hero p {
+            font-size: 18px;
+            line-height: 1.7;
+            margin-bottom: 25px;
+        }
+
+        .secciones {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .tarjeta {
+            background-color: #f8eadc;
+            padding: 25px;
+            flex: 1 1 300px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(74, 44, 32, 0.15);
+            border-left: 6px solid #b86643;
+        }
+
+        .tarjeta h3 {
+            margin-bottom: 12px;
+            color: #8b452f;
+            font-size: 22px;
+        }
+
+        .tarjeta p {
+            line-height: 1.6;
+        }
+
+        .tarjeta img {
+            width: 100%;
+            height: 190px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            background-color: #6f3828;
+            color: #fff8f0;
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1 id="titulo-header">Fenómeno de El Niño</h1>
+    </header>
+
+    <!-- MENÚ INTERactivo -->
+    <nav>
+        <button onclick="cambiarSeccion('inicio', 'Fenómeno de El Niño')" class="active">Inicio</button>
+        <button onclick="cambiarSeccion('ambiental', 'Educación Ambiental')">Educación Ambiental</button>
+        <button onclick="cambiarSeccion('lengua', 'Lengua Castellana')">Lengua Castellana</button>
+    </nav>
+
+    <main>
+        <!-- SECCIÓN 1: INICIO -->
+        <div id="inicio" class="seccion-contenido activa">
+            <section class="hero">
+                <h2>¿Qué es el fenómeno del Niño y Súper Niño?</h2>
+                <p>
+                    El fenómeno de El Niño es un evento climático natural que ocurre
+                    cuando las aguas superficiales del océano Pacífico tropical central
+                    y oriental se calientan más de lo normal. Este calentamiento altera
+                    la circulación atmosférica y puede modificar los patrones de lluvia
+                    y temperatura en diferentes regiones del planeta.
+                </p>
+                <p>
+                    Un Súper Niño es una manifestación excepcionalmente intensa de El Niño.
+                    Durante estos eventos, el calentamiento del océano puede ser mucho
+                    mayor de lo habitual, aumentando la intensidad de algunos de sus
+                    efectos climáticos.
+                </p>
+            </section>
+
+            <section class="secciones">
+                <div class="tarjeta">
+                    <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=800&q=80" alt="Océano">
+                    <h3>¿Cómo se genera?</h3>
+                    <p>
+                        El Niño ocurre cuando las aguas superficiales del océano Pacífico
+                        se calientan más de lo normal. Este cambio puede alterar los
+                        vientos y la circulación de la atmósfera, modificando las
+                        condiciones climáticas de diferentes partes del mundo.
+                    </p>
+                </div>
+
+                <div class="tarjeta">
+                    <img src="https://images.unsplash.com/photo-1561470508-fd4df1ed90b2?auto=format&fit=crop&w=800&q=80" alt="Sequía">
+                    <h3>Fenómeno en la actualidad</h3>
+                    <p>
+                        El fenómeno de El Niño puede producir temperaturas más altas
+                        de lo normal y alterar las lluvias. Dependiendo de la región,
+                        puede provocar sequías, escasez de agua, incendios forestales
+                        y olas de calor.
+                    </p>
+                </div>
+
+                <div class="tarjeta">
+                    <img src="https://images.unsplash.com/photo-1547683905-f686c993aae5?auto=format&fit=crop&w=800&q=80" alt="Lluvias">
+                    <h3>Consecuencias</h3>
+                    <p>• Aumento de las temperaturas.<br>
+                       • Sequías y escasez de agua.<br>
+                       • Mayor riesgo de incendios forestales.<br>
+                       • Cambios en las lluvias e inundaciones.<br>
+                       • Pérdidas en cultivos y agricultura.<br>
+                       • Disminución de especies marinas.</p>
+                </div>
+            </section>
+        </div>
+
+        <!-- SECCIÓN 2: EDUCACIÓN AMBIENTAL -->
+        <div id="ambiental" class="seccion-contenido">
+            <section class="hero">
+                <h2>Educación Ambiental ante el Fenómeno</h2>
+                <p>
+                    La educación ambiental es fundamental para crear conciencia sobre el impacto del cambio climático y eventos como El Niño. Nos enseña a cuidar los recursos hídricos y a prepararnos para mitigar los riesgos de desastres naturales.
+                </p>
+            </section>
+        </div>
+
+        <!-- SECCIÓN 3: LENGUA CASTELLANA -->
+        <div id="lengua" class="seccion-contenido">
+            <section class="hero">
+                <h2>Análisis de Textos y Comunicación</h2>
+                <p>
+                    Desde la Lengua Castellana, estudiamos cómo informar, argumentar y redactar artículos de opinión sobre problemáticas ambientales, mejorando la comprensión lectora y la divulgación científica.
+                </p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Proyecto Escolar</p>
+    </footer>
+
+    <!-- SCRIPT PARA CAMBIAR DE SECCIÓN SIN ERRORES -->
+    <script>
+        function cambiarSeccion(idSeccion, tituloNuevo) {
+            // Ocultar todas las secciones
+            const secciones = document.querySelectorAll('.seccion-contenido');
+            secciones.forEach(sec => sec.classList.remove('activa'));
+
+            // Quitar la clase active de los botones
+            const botones = document.querySelectorAll('nav button');
+            botones.forEach(btn => btn.classList.remove('active'));
+
+            // Mostrar la sección seleccionada
+            document.getElementById(idSeccion).classList.add('activa');
+
+            // Cambiar el título del encabezado según la pestaña
+            document.getElementById('titulo-header').textContent = tituloNuevo;
+
+            // Activar el botón correspondiente
+            event.target.classList.add('active');
+        }
+    </script>
+
+</body>
+</html>
